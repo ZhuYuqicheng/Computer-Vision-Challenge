@@ -18,3 +18,9 @@ Team Member:
   - Demo App (24.06.2021 - 04.07.2021)
   - App Optimization (04.07.2021 - 11.07.2021)
 - Review & Video Production (11.07.2021 - 25.07.2021)
+
+## Reference Codebase
+
+[1] <https://github.com/baiyunming/CV_SS20/tree/main/G18>
+
+[2] <https://github.com/lbw0502/ComputerVision_challenge>
