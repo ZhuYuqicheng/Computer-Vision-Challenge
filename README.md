@@ -8,6 +8,10 @@ Team Member:
 - Peng Xie
 - Yuqicheng Zhu
 
+Links:
+- Google Documentation: <https://docs.google.com/document/d/1PXApE3vgLp31gRb5XhQHbbcdrtvhM21lXW3FVG5Q43Y/edit?usp=sharing>
+- Google Driver: <https://drive.google.com/drive/folders/1B8E0q8D9QjJTPFQ_xkNJE34N4AoLNaza?usp=sharing>
+
 ## Timeline
 
 - Kick-off (09.06.2021)
