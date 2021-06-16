@@ -31,6 +31,3 @@ Links:
 
 [3] <https://github.com/chadagreene/ITS_LIVE>
 
-## Poster
-
-[4] <https://venngage.net/pl/ei53Q5UMhtk>
