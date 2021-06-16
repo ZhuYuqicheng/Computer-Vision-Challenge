@@ -30,3 +30,7 @@ Links:
 [2] <https://github.com/lbw0502/ComputerVision_challenge>
 
 [3] <https://github.com/chadagreene/ITS_LIVE>
+
+## Poster
+
+[4] <https://venngage.net/pl/ei53Q5UMhtk>
