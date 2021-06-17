@@ -1,7 +1,9 @@
-%clear;
+clear;
 load('colormap.mat')
+load('colormaplow.mat')
+load('colormapverylow.mat')
 addpath('dataset/Columbia Glacier')
-filePattern = fullfile('dataset/Columbia Glacier', '*.jpg');
+filePattern = fullfile('dataset/Columbia Glacier', '*.jpg');%%Brazilian Rainforest,Columbia Glacier,Dubai,Kuwait
 imagefiles = dir(filePattern);
 for i=1:length(imagefiles)
     currentfilename = imagefiles(i).name;
@@ -10,12 +12,14 @@ end
 %%
 %%grayscal of two images, problem bei e.g 6&7
 imgA=image{1};
+%figure;imshow(imgA)
 grayA=rgb2gray(imgA);
 %X = grayslice(grayA,255);
 %m = double(max(X(:)));
 %figure;imshow(X,jet(m))
 
-imgB=image{8};
+imgB=image{3};
+%figure;imshow(imgB)
 grayB=rgb2gray(imgB);
 %%SURF
 pointsA=detectSURFFeatures(grayA);
@@ -41,13 +45,22 @@ diff=imgAafter-imgB;
 grayDiff=rgb2gray(diff);
 X = grayslice(grayDiff,255);
 m = double(max(X(:)));
-im1=ind2rgb(X,Colormap);
-
-im=uint8(im1*255)+imgB;
+if mean(diff(:))>20
+    imdiff=ind2rgb(X,Colormap);
+    disp('große Änderung')
+elseif mean(diff(:))<=20 && mean(diff(:))>10
+    imdiff=ind2rgb(X,Colormaplow);
+    disp('kleine Änderung')
+elseif mean(diff(:))<=10
+    imdiff=ind2rgb(X,Colormapverylow);
+    disp('sehr kleine Änderung')
+end
+im=uint8(imdiff*255)+imgB;
+%im=uint8(im1*255)+grayB;
 
 figure;imshow(im);
-%figure;imshowpair(im1,imgB,'blend');
 
+%figure;imshowpair(im1,imgB,'blend');
 %figure;imshowpair(imgAafter,imgB)
 %figure;imshow(imgA)
 %figure;imshow(imgB)
