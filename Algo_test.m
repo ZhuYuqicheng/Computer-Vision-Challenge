@@ -8,7 +8,7 @@ image_path_2 = GetImagePath('2004');
 I1 = imread(image_path_1);
 I2 = imread(image_path_2);
 
-% Convert to grayscale.
+% Convert to grayscale
 I1gray = rgb2gray(I1);
 I2gray = rgb2gray(I2);
 
