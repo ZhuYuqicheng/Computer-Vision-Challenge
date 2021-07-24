@@ -1,6 +1,6 @@
 # Climate Visual Project
 
-![Project Video](./Gif/video.gif)
+![Project Video](./Gif/Video.gif)
 
 Introduction
 
