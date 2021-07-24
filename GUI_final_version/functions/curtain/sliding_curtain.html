@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta http-equiv="Expires" content="0"> 
+		<meta http-equiv="Pragma" content="no-cache"> 
+		<meta http-equiv="Cache-control" content="no-cache"> 
+		<meta http-equiv="Cache" content="no-cache">
+        <title>Curtain</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.doubleviewer_s1.js"></script>
+    </head>
+    <body>
+        <div class="container">
+		<div style="text-align:center;clear:both"><br>
+
+		</div>
+			<section>
+			<script type="text/javascript">
+				$(function(){
+					$("#t1").click(function(){
+						$('#cont').html('').append("<div id='DoubleViewer'></div>");
+						$('#DoubleViewer').doubleviewer();
+						$(".current", event.delegateTarget).removeClass("current");
+						$(this).addClass("current");
+						$('#mtext').text('(Default settings)');
+					});
+					$("#t2").click(function(){
+						var config = {
+							lineColor: '#fff',
+							noClick:true,
+							img_before: 'img/o1.jpg',
+							img_after: 'img/o2.jpg',
+							cursor:{
+								color: '#2D9EA3',
+								size: 8,
+								gap: 4,
+								lineColor: '#2D9EA3',
+								lineH: 30
+							}
+						}						
+						$('#cont').html('').append("<div id='DoubleViewer'></div>");						
+						$('#DoubleViewer').doubleviewer(config);
+						$(".current", event.delegateTarget).removeClass("current");
+						$(this).addClass("current");
+						$('#mtext').text('(Control without pressing the mouse)');
+					});
+					$("#t3").click(function(){
+						var config = {
+							lineColor: '#666',
+							lineWidth: 4,
+							cursorVisible: false,
+							stopClick: true,
+							img_before: 'img/o1.jpg',
+							img_after: 'img/o2.jpg',
+							startPosition: .3
+						}						
+						$('#cont').html('').append("<div id='DoubleViewer'></div>");						
+						$('#DoubleViewer').doubleviewer(config);
+						$(".current", event.delegateTarget).removeClass("current");
+						$(this).addClass("current");
+						$('#mtext').text('(Cursor invisible & line stop in click position)');
+					});
+					$('#DoubleViewer').doubleviewer();
+				});
+			</script>
+				<div id="cont">
+					<div id="DoubleViewer"></div>
+					<div id="chinazzzsc"></div>
+				</div>
+			</section>
+        </div>
+
+    </body>
+</html>

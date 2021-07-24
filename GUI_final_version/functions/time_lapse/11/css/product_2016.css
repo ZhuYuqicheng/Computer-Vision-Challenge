@@ -1,0 +1,28 @@
+/*播放时的按钮不单独显示*/
+.dis{display:none}
+.mainContent{width:1000px;margin:0 auto;position:relative;z-index:1}
+/*背景浅蓝色底板*/
+.mainContent .contentBg{width:80%;float:left;background:#ffffff}
+/*图片放置在背景底板右侧*/
+.mainContent .contentBg .rightContent{width:786px;float:right;position:relative}
+/*显示图片元素*/
+.picContent{width:750px;height:426px}
+.picContent img{width:750px;height:426px;display:none}
+.picContent .showImg{display:block;width:750px;height:426px}
+/*控制台按钮*/
+.playDiv{width:95.45%;height:36px;background:aliceblue;line-height:36px}
+.playDiv .btnDiv{width:36px;height:36px;float:left;margin-right:5px}
+.playDiv .playBtn{margin-top:5px;margin-left:5px;height:25px;width:25px;background-position:-85px 0}
+.playDiv .stopBtn{margin-top:6px;margin-left:5px;height:25px;width:25px;background-position:-60px 0}
+.playDiv .infoDiv{height:36px;float:left;color:#fff;margin-right:10px;font-size:12px}
+/*三个长方形按钮*/
+.playDiv .playStaLi a{height:6px;float:left;margin-top:15px;_margin-top:8px;background:#5a82ab;cursor:pointer}
+/*鼠标移动到按钮上的时候为白色*/
+.playDiv .playStaLi a:hover{background:#fff}
+.playDiv .playStaLi .cur{background:#f29143!important}
+.playDiv .playStaLi02 a{margin-left:10px;width:40px}
+.playDiv .playStaLi03 a{margin-right:4px;width:36px}
+.playDiv .playStaLi24 a{margin-left:3px;width:21px}
+/*播放键*/
+.imgBtns{background-image:url(http://i.tq121.com.cn/i/product_2016/imgBtns.png);background-repeat:no-repeat} */
+
