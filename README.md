@@ -43,9 +43,11 @@ In the last decades, the impact of mankind on our environment has greatly gained
 
 ## GUI User's Guide
 
-:computer: : should work both for **WINDOWS** and **MAC**
+![Project Video](./GUI_final_version/cover.png)
 
-:rocket: MATLAB Version: at least **MATLAB R2020b**
+> :computer: : should work both for **WINDOWS** and **MAC**
+>
+> :rocket: MATLAB Version: at least **MATLAB R2020b**
 
 ### **Difference Curtain**
 
